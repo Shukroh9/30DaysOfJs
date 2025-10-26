@@ -1,0 +1,53 @@
+// Declare a variable named challenge and assign it to an initial value '30 Days Of  JavaScript;
+let challenge = '30 Days Of JavaScript'
+// print the string on the console
+console.log(challenge);
+// print the length of the string on the browser console
+console.log(challenge.length)
+// Change all the string character to UpperCase
+console.log(challenge.toUpperCase())
+// Change all the string character to LowerCase (5)
+console.log(challenge.toLowerCase())
+// cut out the first word of the string (6)
+console.log(challenge.substring(3,21))
+// cut out the phrase 'Days of javascript' from the string (7)
+console.log(challenge.substring(0,2))
+// check if the string contains 'script' (8)
+console.log(challenge.includes('Script'))
+// split the string into an array (9)
+console.log(challenge.split())
+// split the string at the space (10)
+console.log(challenge.split(' '))
+// split the socialmedia variable at the comma and change it to an array (11)
+let socialmedia = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+console.log(socialmedia.split(','))
+// change the JavaScript in challenge variable to Python (12)
+console.log(challenge.replace('JavaScript', 'Python'))
+// what is the character at index 15 of challenge variable (13)
+console.log(challenge.charAt(15))
+// what is the character code of J in challenge variable (14)
+console.log(challenge.charCodeAt('J'))
+// find the first occurrence of a in challenge variable (15)
+console.log(challenge.indexOf('a'))
+// find the last occurence of a in challenge variable (16)
+console.log(challenge.lastIndexOf('a'))
+// find the first occurrence of the word 'because' in the compoundsentence variable (17)
+let compoundsentence = 'You cannot end a sentence with because because because is a conjunction'
+console.log(compoundsentence.indexOf('because'))
+// find the last occurrence of the word 'because' in the compoundsentence variable (18)
+console.log(compoundsentence.lastIndexOf('because'))
+// find the position of the first occurrence of the word 'because' in the compoundsentence variable (19)
+console.log(compoundsentence.search('because'))
+// remove the trailing whitespace at the beginning and at the end of the challenge variable (20)
+console.log(challenge.trim(' '))
+// What does challenge variable starts with? (21)
+console.log(challenge.startsWith('3'))
+// what does challenge variable ends with? (22)
+console.log(challenge.endsWith('t'))
+// find all a's in challenge variable (23)
+console.log(challenge.match('a'))
+// merge incomplete variable with 'JavaScript' (24)
+let incomplete = '30 Days Of '
+console.log(incomplete.concat('JavaScript'))
+// repeat challenge variable 2times (25)
+console.log(challenge.repeat(2))

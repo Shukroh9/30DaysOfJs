@@ -6,9 +6,9 @@
 /* comments can make code readable, easy to reuse
 and informative */
 // Declare four variables without assigning values (question)
-let name;
+let namee;
 let school;
-let age;
+let years;
 let siblings;
 // Declare four variables with assigned value
 let middleName = 'Olajumoke';
