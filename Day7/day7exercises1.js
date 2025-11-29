@@ -103,3 +103,14 @@ function checkSeason(month) {
     }
 }
 checkSeason('may')
+// function that find the max number
+function findMax(a, b, c) {
+    let max = a
+    if (b > a) {
+        max = b
+    } else if (c > b) {
+        max = c
+    }
+    console.log(max)
+}
+findMax(9, 5, 10)
