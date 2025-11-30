@@ -55,6 +55,7 @@ let items = []
 function addItem(item) {
     items.push(item)
     console.log(items)
+}
 addItem('rice')
 // function that removes item from an array
 let rItem = ['apple', 'orange', 'pawpaw', 'banana']
@@ -80,6 +81,41 @@ function sumOfOdd(a, b) {
             oddSum += i
         }
     }
-    console.log(oddSum)
+   console.log(oddSum)
 }
-sumOfOdd(5, 8)
+sumOfOdd(0, 100)
+// function that add up all the even numbers in the range
+function sumOfEven(a, b) {
+    let evenSum = 0
+    for (let i = a; i <= b; i++) {
+        if (i % 2 === 0) {
+            evenSum += i
+        }
+    }
+    console.log(evenSum)
+}
+sumOfEven(0, 100)
+// function that counts number of evens and odds in the parameter
+function evenAndOdds(a) {
+    let numberOfEven = []
+    let  numberOfOdd = []
+    for (let i = 0; i <= a; i++) {
+        if (i % 2 === 0) {
+            numberOfEven.push([i])
+        } else if (i % 2 === 1) {
+            numberOfOdd.push([i])
+        }
+    }
+    console.log(numberOfEven.length, numberOfOdd.length)
+}
+evenAndOdds(100)
+// function that takes any number of agreement and sum them
+function sumNumbers(...numbers) {
+    let total = 0
+    for (let i = 0; i < numbers.length; i++) {
+        total += numbers[i]
+    }
+    console.log(total)
+}
+sumNumbers(2, 1, 5, 8, 10, 6)
+// random id generating
