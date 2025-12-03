@@ -38,7 +38,7 @@ function accountInfo() {
 }
 accountInfo()
 // Question 2, 3 and 4 are based on this array
-const users = [
+const userS = [
     {
         _id: 'ab12ex',
         username: 'Alex',
@@ -111,3 +111,35 @@ const users = [
   }
 ]
 // function that allows user to signUp      (2a)
+function signUp(name, email, password) {
+    const userExists = userS.some(user => user.email === email)
+    if (userExists) {
+        console.log("User already exist")
+    } else{
+    const newUser = {
+        _id: '',
+        username: name,
+        email: email,
+        password: password,
+        createdAt: new Date(),
+        isLoggedIn: false
+    }
+    userS.push(newUser)
+    console.log('User registered successfully')
+    }
+}
+signUp('Shukroh', 'shukroh@gmail.com', '123456')
+console.log(userS)
+// function that allows user to signin
+function signIn(email, password) {
+    const userEmail = userS.find(user => user.email === email)
+    if (!userEmail) {
+        console.log('User does not exist');
+        return
+    }
+    const passwordd = userS.find(user => user.password === password)
+    if (!passwordd) {
+        console.log('Incorrect password')
+    } else { console.log('You have successfully logged In')}
+}
+signIn('shukroh@gmail.com', '123456')
