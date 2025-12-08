@@ -1,6 +1,25 @@
 // develop a small script which generate any number of characters id
+let id = ''
+for (let i = 0; i < 20; i++) {
+    let charSet = "0123456789abcdefghijklmnopqrstuvwxyz"
+    id += charSet.charAt(Math.floor(Math.random() * charSet.length))
+}
+console.log(id)
 // write a script which generates a random hexadecimal number
+let hexadecimal = '';
+for (let i = 0; i <6; i++){
+    let charSet = "0123456789abcdef"
+    let characters = Math.floor(Math.random() * charSet.length)
+    hexadecimal += charSet.charAt(characters)
+}
+console.log(`#${hexadecimal}`)
 // write a script which generates a random rgb color number
+let rgb = []
+for (let i = 0; i < 3; i++){
+    let randomNum = Math.floor(Math.random() * 256)
+    rgb.push(randomNum)
+}
+console.log(`RGB(${rgb[0]}, ${rgb[1]}, ${rgb[2]})`)
 const countries = [
     'Albania',
     'Bolivia',
@@ -111,7 +130,7 @@ let fruits = [
     'mango',
     'lemon'
 ]
-for (let i = fruits.length; i >= 0; i--) {
+for (let i = fruits.length-1; i >= 0; i--) {
     console.log(fruits[i])
 }
 // print all the elements of fullstack array
@@ -119,6 +138,8 @@ let fullstack = [
     ['HTML', 'CSS', 'JS', 'React'],
     ['Node', 'Express', 'MongoDB']
 ]
-for (let i = 0; i < fullstack[0,1].length; i++) {
-    console.log(fullstack[i])
+for (let i = 0; i < fullstack.length; i++) {
+    for (let a = 0; a < fullstack[i].length; a++){
+        console.log(fullstack[i][a])
+    }
 }

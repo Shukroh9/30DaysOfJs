@@ -143,3 +143,22 @@ function signIn(email, password) {
     } else { console.log('You have successfully logged In')}
 }
 signIn('shukroh@gmail.com', '123456')
+// Product function that rates product
+function rateProduct(productId, userId, rate) {
+    const product = products.find(p => p._id === productId)
+    if (!product) {
+        return ('Product does not exist')
+    }
+    product.ratings.push({userId, rate})
+    return product.ratings
+}
+rateProduct('hedfdt', 'gf24pj', 5)
+console.log(products[2])
+// calculate the average rate of a product
+function averageRate(productId) {
+    const product = products.find(p => p._id === productId)
+    const rates = products.find(p => p.ratings.rate)
+    for (let a in products) {
+        let 
+    }
+}

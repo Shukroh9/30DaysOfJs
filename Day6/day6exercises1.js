@@ -85,5 +85,24 @@ console.log(sumOdd)
 // print the sum of even and odd numbers ass array
 console.log([sumEven, sumOdd])
 // develop a small script which generate array of 5 random numbers
+let randomNum5 = []
+for (let i = 0; i < 5; i++) {
+    let characters = Math.floor(Math.random() * 10)
+    randomNum5.push(characters)
+}
+console.log(randomNum5)
 // develop a small script which generate array of 5 random numbers and the numbers must be unique
+let uniqueRandom = []
+for (let i = 0; i < 5; i++){
+    let characters = Math.floor(Math.random() *10) + 1
+    uniqueRandom.push(characters)
+}
+console.log(uniqueRandom)
 // develop a small script which generate a six characters random id
+let iD = ""
+for (let i = 0; i < 5; i++) {
+    let charSet = "0123456789abcdefghijklmnopqrstuvwxyz"
+    let characters = charSet.charAt(Math.floor(Math.random() * charSet.length))
+    iD += characters
+}
+console.log(iD)
