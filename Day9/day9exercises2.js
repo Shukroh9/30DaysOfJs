@@ -9,6 +9,9 @@ console.log(priceSum)
 let totalPrice = products.reduce((sum, product) => sum + Number(product.price), 0)
 console.log(totalPrice)
 // a function that returns an array of countries that has pattern
-function categorizeCountries () {
-    const pattern = ["land", "ia", "island", "stan"]
+function categorizeCountries() {
+    const patterns = ["land", "ia", "island", "stan"];
+    return patterns.map(pattern => countries.filter(country => country.toLowerCase().includes(pattern)))
 }
+console.log(categorizeCountries())
+// create a function that returns array of abjects

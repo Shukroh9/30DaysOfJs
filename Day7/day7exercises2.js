@@ -118,4 +118,27 @@ function sumNumbers(...numbers) {
     console.log(total)
 }
 sumNumbers(2, 1, 5, 8, 10, 6)
-// random id generating
+// random userIP generating function
+function userIp(){
+        let userIP = []
+    for (let i = 0; i < 4; i++){
+        let char = Math.floor(Math.random() * 255)
+        userIP.push(char)
+    }
+   return userIP.join('.')
+}
+console.log(userIp())
+// random MacAddress generating function
+function MacAddress(){
+    let address = []
+    for (let i = 0; i < 6; i++){
+        let pair = ""
+       let charSet = "0123456789ABCDEF"
+       for (let j = 0; j < 2; j++){
+       pair += charSet[Math.floor(Math.random() * charSet.length)]
+       }
+       address.push(pair)
+    }
+    return address.join(':')
+}
+console.log(MacAddress())
